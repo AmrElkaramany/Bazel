@@ -1,0 +1,147 @@
+.anima::after {
+    content: "";
+    font-size: 24px;
+    font-weight: 400;
+    animation: text 5s infinite;
+    color: #00c3da;
+}
+@keyframes text {
+    0% {
+        content :'s  |';
+    }
+    3% {
+        content :'so  |';
+    }
+    6% {
+        content :'sof  |';
+    }
+    9% {
+        content :'soft  |';
+    }
+    12% {
+        content :'softw  |';
+    }
+    15% {
+        content :'softwa  |';
+    }
+    18% {
+        content :'softwar  |';
+    }
+    21% {
+        content :'softwares  |';
+    }
+    22% {
+        content :'softwares  |';
+    }
+    23% {
+        content :'softwares  |';
+    }
+    24% {
+        content :'software  |';
+    }
+    27% {
+        content :'softwar  |';
+    }
+    30% {
+        content :'softwa  |';
+    }
+    33% {
+        content :'softw  |';
+    }
+    36% {
+        content :'soft  |';
+    }
+    39% {
+        content :'sof  |';
+    }
+    42% {
+        content :'so  |';
+    }
+    45% {
+        content :'s  |';
+    }
+    48% {
+        content :'  |';
+    }
+    /*  apps */
+    51% {
+        content :'a  |';
+    }
+    54% {
+        content :'ap  |';
+    }
+    57% {
+        content :'app  |';
+    }
+    60% {
+        content :'apps  |';
+    }
+    61% {
+        content :'apps  |';
+    }
+    62% {
+        content :'apps  |';
+    }
+    
+    63% {
+        content :'app  |';
+    }
+    66% {
+        content :'ap  |';
+    }
+    69% {
+        content :'a  |';
+    }
+    72% {
+        content :'  |';
+    }
+    /* websites */
+    75% {
+        content :'w  |';
+    }
+    78% {
+        content :'we  |';
+    }
+    81% {
+        content :'web  |';
+    }
+    84% {
+        content :'webs  |';
+    }
+    87% {
+        content :'websi  |';
+    }
+    88% {
+        content :'websit  |';
+    }
+    89% {
+        content :'website  |';
+    }
+    90% {
+        content :'websites  |';
+    }
+    91% {
+        content :'website  |';
+    }
+    92% {
+        content :'websit  |';
+    }
+    93% {
+        content :'websi  |';
+    }
+    94% {
+        content :'webs  |';
+    }
+    95% {
+        content :'web  |';
+    }
+    97% {
+        content :'we  |';
+    }
+    98% {
+        content :'w  |';
+    }
+    100% {
+        content :'  |';
+    }
+}

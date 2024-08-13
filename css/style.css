@@ -1,0 +1,823 @@
+body {
+    color: rgb(120, 120, 120);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Poppins, sans-serif;
+    color: rgb(31, 31, 31);
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+section {
+    padding: 110px 0;
+}
+
+/* Start nav */
+nav .container-fluid {
+    padding: 1em 6rem;
+    background-color: #fff;
+}
+
+.dot-circle {
+    color: #00BFD8;
+    font-size: 10px;
+}
+
+nav ul {
+    margin-right: 2em;
+}
+
+
+nav ul li a {
+    color: #242424 !important;
+    font-size: 13px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    transition: all .3s ease !important;
+    outline: none !important;
+}
+
+.navbar-nav {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.nav-social i {
+    padding: 0 1rem;
+    color: #242424;
+    transition: all 1s;
+}
+
+.nav-social a:hover i {
+    color: #ccc;
+}
+
+nav .logo {
+    width: 8%;
+}
+
+
+
+/* End nav */
+/* start header */
+
+#home {
+    padding: 0;
+}
+
+#home .carousel-inner .home1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg-image-28.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+
+}
+
+#home .carousel-inner .home2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg-image-29.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+
+}
+
+.home1 h1 {
+    font-size: 78px;
+    letter-spacing: -3px;
+    line-height: 1.25;
+    transform: scale(1.2);
+    color: #fff;
+    user-select: none;
+
+}
+
+.home2 h1 {
+    font-size: 78px;
+    letter-spacing: -3px;
+    line-height: 1.25;
+    transform: scale(1.2);
+    color: #fff;
+    user-select: none;
+
+}
+
+.home1 p {
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+
+}
+
+.home2 p {
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+
+}
+
+#home .carousel-control-prev i, #home .carousel-control-next i {
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    border: 0.1px solid white;
+    border-left: 0;
+    padding: 18px;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 33;
+}
+
+#home .carousel-control-prev::after {
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: -140%;
+    transition: all 0.3s;
+}
+
+#home .carousel-control-next::after {
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: -140%;
+    transition: all 0.3s;
+}
+
+#home .carousel-control-prev:hover::after, #home .carousel-control-next:hover::after {
+    left: -48%;
+    background-color: #fff;
+}
+
+#home .carousel-control-prev:hover i, #home .carousel-control-next:hover i {
+    color: black;
+}
+
+.sp-btn {
+
+    background-color: #00d5ee;
+    color: white;
+    position: relative;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+}
+
+/* Animation */
+.sp-btn:hover::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, .3),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+
+    20% {
+        left: 100%
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+.sp-btn2 {
+    color: white;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px 25px;
+    border: solid 1px white;
+    position: relative;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+}
+
+#home .sp-btn:hover {
+    background-color: #00d5ee;
+    transform: translateY(-2px);
+    color: white;
+}
+
+#home .carousel .carousel-item .sp-btn2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(0.99);
+}
+
+.arrow-home {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+}
+
+/* End header */
+/* Start About */
+#about {
+    font-size: 24px;
+}
+
+#about h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 0px;
+}
+
+#about p {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+#about a {
+    line-height: 48px;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: rgb(31, 31, 31);
+    background-color: transparent;
+    border-color: rgb(222, 222, 222);
+    transition: all 0.3s;
+}
+
+#about a:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* End About */
+/* Start Team */
+#team {
+    border-top: 1px solid #eeeeee;
+}
+
+.heading-team h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+.heading-team h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #787878;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.c-team {
+    position: relative;
+}
+
+.c-team::before {
+    content: "C";
+    position: absolute;
+    font-size: 2em;
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    z-index: -1;
+    opacity: 0.06;
+}
+
+.overlay-team {
+    position: absolute;
+    top: 20%;
+    opacity: 0;
+    transition: all 0.2s;
+    background-color: rgba(0, 195, 218, 0.9);
+}
+
+.img-team:hover .overlay-team {
+    top: 0;
+    opacity: 1;
+}
+
+.socail-team {
+    position: relative;
+    top: 5%;
+    left: 8%;
+}
+
+.socail-team li a {
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 0.95;
+    transition: all 0.2s;
+    font-weight: 900;
+}
+
+.socail-team li a:hover {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+.defination-team {
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+}
+
+.defination-team h4 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.defination-team span {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    z-index: 22;
+}
+
+/* End Team */
+/* Start services */
+#services {
+    position: relative;
+}
+
+#services .overlay-services {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1f1f1f;
+    opacity: 0.7;
+    z-index: -3;
+}
+
+.services-item h4 {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.heading-do h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin-bottom: 25px;
+
+}
+
+.heading-do p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.98;
+    line-height: 1.7;
+}
+
+.c-services {
+    position: relative;
+}
+
+.c-services::before {
+    content: "w";
+    position: absolute;
+    font-size: 2em;
+    top: -0.5em;
+    transform: translateX(-15%);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: -1;
+    opacity: 0.09;
+
+}
+
+#services ul li {
+    color: rgb(255, 255, 255);
+    padding: 6px 0;
+    opacity: 0.9;
+}
+
+/* End Services */
+/* Start Pricing */
+#pricing {
+    background-color: #F7F7F7;
+}
+
+.heading-pricing h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+.heading-pricing h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #787878;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.pricing-item {
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    margin: 50px auto 25px;
+    padding: 45px 35px;
+    border: 1px solid #f3f3f3;
+}
+
+.pricing-item h6 {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: #00c3da;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.brd-btom {
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-item h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.pricing-item h2 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.dolar {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+
+}
+
+.brd-btom .color {
+    color: #00c3da;
+
+}
+
+.btn-pricing {
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-pricing a {
+    padding: 0 16px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #00c3da;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+    transition: all 0.9s ease;
+}
+
+.btn-pricing a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, .3),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+
+    20% {
+        left: 100%
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+.btn-pricing:hover a {
+    background-color: #00c3da;
+    color: #fff;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: translateY(-2px);
+}
+
+.btn-pricing a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+}
+
+
+.scale {
+    transform: scaleY(1.09);
+}
+
+.c-pricing {
+    position: relative;
+}
+
+.c-pricing::before {
+    content: "C";
+    font-size: 2em;
+    position: absolute;
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    opacity: 0.06;
+}
+
+/* End Pricing */
+
+/* Start  testimonial*/
+#testimon {
+    background-color: #F7F7F7;
+
+}
+
+.testimonial {
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.caro-img {
+    width: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#testimon .carousel-item h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+
+#testimon .mb-25 {
+    margin-bottom: 80px;
+    z-index: 22;
+}
+
+.testimonial h4 {
+    margin: 25px 0 10px;
+    letter-spacing: -0.03em;
+}
+
+.testimonial span {
+    text-transform: uppercase;
+    font-family: 'Poppins', serif;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+
+.testimonial p {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top:0 !important ;
+}
+
+#testimon .carousel-indicators [data-bs-target] {
+    font-size: 0;
+    border: 0;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgba(57, 51, 51, 0.1);
+    outline: none;
+    opacity: 1;
+}
+
+#testimon .carousel-indicators .active {
+    background-color: #00C3DA;
+}
+
+#testimon .fa-arrow-left {
+    color: #7C7C7C;
+    transition: all 0.2s;
+}
+
+#testimon .fa-arrow-left:hover {
+    color: #00C3DA;
+    margin-right: 15px;
+}
+
+#testimon .fa-arrow-right {
+    color: #7C7C7C;
+    transition: all 0.2s;
+
+}
+
+#testimon .fa-arrow-right:hover {
+    color: #00C3DA;
+    margin-left: 15px;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+
+/* End  testimon*/
+/* Start contact */
+iframe {
+    height: 100%;
+    width: 100%;
+
+}
+
+.G-item {
+    position: relative;
+}
+
+.G-item::before {
+    content: "g";
+    position: absolute;
+    z-index: -1;
+    top: -0.5em;
+    transform: translateX(-20%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    opacity: .06;
+}
+
+.heading-contact h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+.heading-contact h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #787878;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.575rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0;
+    opacity: 0.7;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.form-group input:focus {
+    outline: 1px solid black;
+    box-shadow: none !important;
+    border-radius: 0;
+    border: 0 !important;
+}
+
+.form-group textarea:focus {
+    outline: 1px solid black;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}
+
+#contact form button {
+    background-color: #00C3DA;
+    color: #fff;
+    position: relative;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+    margin-bottom: 8rem;
+}
+#contact form button:hover
+{
+
+    transform: translateY(-2px);
+
+}
+
+.form-btn:hover::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, .3),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+
+    20% {
+        left: 100%
+    }
+
+    100% {
+        left: 100%
+    }
+}
